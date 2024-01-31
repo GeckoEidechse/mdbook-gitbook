@@ -13,6 +13,12 @@ struct Asset;
 /// The GitBook preprocessor.
 pub struct GitBook;
 
+impl Default for GitBook {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl GitBook {
     pub fn new() -> GitBook {
         GitBook

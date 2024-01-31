@@ -1,7 +1,7 @@
 use clap::{Arg, ArgMatches, Command};
 use mdbook::errors::Error;
 use mdbook::preprocess::{CmdPreprocessor, Preprocessor};
-use mdbook_gitbook::Nop;
+use mdbook_gitbook::GitBook;
 use semver::{Version, VersionReq};
 use std::io;
 use std::process;
@@ -20,7 +20,7 @@ fn main() {
     let matches = make_app().get_matches();
 
     // Users will want to construct their own preprocessor here
-    let preprocessor = Nop::new();
+    let preprocessor = GitBook::new();
 
     if let Some(sub_args) = matches.subcommand_matches("supports") {
         handle_supports(&preprocessor, sub_args);

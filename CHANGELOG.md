@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.2.3...v0.3.0) (2024-02-01)
+
+
+### Features
+
+* Add general website embed support ([#11](https://github.com/GeckoEidechse/mdbook-gitbook/issues/11)) ([05ab000](https://github.com/GeckoEidechse/mdbook-gitbook/commit/05ab000a4684b8ddb80c29e660a1d44058282691))
+
 ## [0.2.3](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.2.2...v0.2.3) (2024-02-01)
 
 

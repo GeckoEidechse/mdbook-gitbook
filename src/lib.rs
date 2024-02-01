@@ -56,7 +56,7 @@ impl Preprocessor for GitBook {
 fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
     chapter.content = inject_stylesheet(&chapter.content)?;
     chapter.content = hints::render_hints(&chapter.content)?;
-    chapter.content = embeds::render_youtube_embeds(&chapter.content)?;
+    chapter.content = embeds::render(&chapter.content)?;
     Ok(())
 }
 

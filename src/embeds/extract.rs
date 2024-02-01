@@ -85,7 +85,7 @@ pub fn get_website_embed_data(url: &str) -> WebsiteEmbedProperties {
     let site_name = url::Url::parse(url)
         .unwrap() // TODO: don't panic but just fall back to url
         .host_str()
-        .unwrap_or_else(|| url)
+        .unwrap_or(url)
         .to_string();
 
     // Load webpage and parse it
@@ -106,17 +106,17 @@ pub fn get_website_embed_data(url: &str) -> WebsiteEmbedProperties {
     // Try fluid icon first, if not, fallback to favicon
     let icon_url = extract_fluid_icon(document.clone())
         .or_else(|| extract_favicon(document.clone()))
-        .unwrap_or_else(|| icon_url);
+        .unwrap_or(icon_url);
 
     // Get title
     // Try og:title first, fall back to <title>, or URL otherwise
     let title = extract_og_title(document.clone())
         .or_else(|| extract_title(document.clone()))
-        .unwrap_or_else(|| title);
+        .unwrap_or(title);
 
     // Get sitename
     // Try og:site_name first, otherwise use base domain
-    let site_name = extract_og_name(document.clone()).unwrap_or_else(|| site_name);
+    let site_name = extract_og_name(document.clone()).unwrap_or(site_name);
 
     WebsiteEmbedProperties {
         icon_url,

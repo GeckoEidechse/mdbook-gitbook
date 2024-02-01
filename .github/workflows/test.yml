@@ -53,4 +53,4 @@ jobs:
           cargo clippy --version
       - name: Clippy check
         run: |
-          cargo clippy --all-features --all-targets
+          cargo clippy --all-features --all-targets -- --no-deps --deny warnings

@@ -8,7 +8,7 @@ use regex::Regex;
 /// - YouTube links
 pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
     // Handle special cases first:
-    let content = render_youtube_embeds(&content)?;
+    let content = render_youtube_embeds(content)?;
 
     // Finally return
     Ok(content)

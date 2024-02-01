@@ -6,9 +6,11 @@ use once_cell::sync::Lazy;
 use regex::Regex;
 use rust_embed::RustEmbed;
 
+mod hints;
+
 #[derive(RustEmbed)]
 #[folder = "assets/"]
-struct Asset;
+pub struct Asset;
 
 /// The GitBook preprocessor.
 pub struct GitBook;
@@ -54,7 +56,7 @@ impl Preprocessor for GitBook {
 /// Apply to all chapters
 fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
     chapter.content = inject_stylesheet(&chapter.content)?;
-    chapter.content = render_hints(&chapter.content)?;
+    chapter.content = hints::render_hints(&chapter.content)?;
     chapter.content = render_youtube_embeds(&chapter.content)?;
     Ok(())
 }
@@ -64,34 +66,6 @@ fn inject_stylesheet(content: &str) -> Result<String, Error> {
     let style = Asset::get("style.css").expect("style.css not found in assets");
     let style = std::str::from_utf8(style.data.as_ref())?;
     Ok(format!("<style>\n{style}\n</style>\n{content}"))
-}
-
-/// Uses regex to find [GitBook hints](https://docs.gitbook.com/content-editor/blocks/hint)
-/// and replaces them with appropriate HTML rendering
-fn render_hints(content: &str) -> Result<String, Error> {
-    static RE: Lazy<Regex> = Lazy::new(|| {
-        Regex::new(
-            r#"\{% hint style="(?P<kind>[^"]+)" %\}\s*\n(?P<body>(?:.*\n)*?)\s*\{% endhint %\}"#,
-        )
-        .expect("failed to parse regex")
-    });
-    let hints = Asset::get("hints-template.html").expect("hints-template.html not found in assets");
-    let hints = std::str::from_utf8(hints.data.as_ref())?;
-    let content = RE.replace_all(content, |caps: &regex::Captures| {
-        let kind = caps
-            .name("kind")
-            .expect("kind not found in regex")
-            .as_str()
-            .to_lowercase();
-        let body = caps
-            .name("body")
-            .expect("body not found in regex")
-            .as_str()
-            .replace("\n>\n", "\n\n")
-            .replace("\n> ", "\n");
-        hints.replace("{kind}", &kind).replace("{body}", &body)
-    });
-    Ok(content.into())
 }
 
 /// Uses regex to find [GitBook YouTube embeds](https://docs.gitbook.com/content-editor/blocks/embed-a-url#videos)

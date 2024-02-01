@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.1.0...v0.2.0) (2024-02-01)
+
+
+### Features
+
+* Add ability to render GitBook syntax YouTube embeds ([#5](https://github.com/GeckoEidechse/mdbook-gitbook/issues/5)) ([16969b1](https://github.com/GeckoEidechse/mdbook-gitbook/commit/16969b1d187940029c96183e6409b1de35e6d7a9))
+
 ## 0.1.0 (2024-01-31)
 
 

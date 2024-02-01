@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.2.0...v0.2.1) (2024-02-01)
+
+
+### Bug Fixes
+
+* **ci:** Run crate publish after release-please ([#7](https://github.com/GeckoEidechse/mdbook-gitbook/issues/7)) ([354ae4a](https://github.com/GeckoEidechse/mdbook-gitbook/commit/354ae4aff9ebf17d686726d62c241b89ef09d643))
+
 ## [0.2.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.1.0...v0.2.0) (2024-02-01)
 
 

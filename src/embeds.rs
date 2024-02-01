@@ -17,7 +17,7 @@ pub fn render_youtube_embeds(content: &str) -> Result<String, mdbook::errors::Er
             .name("ytid")
             .expect("YouTube-ID not found in regex")
             .as_str();
-        hints.replace("{ytid}", &yt_id)
+        hints.replace("{ytid}", yt_id)
     });
     Ok(content.into())
 }

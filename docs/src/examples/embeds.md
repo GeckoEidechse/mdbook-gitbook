@@ -4,6 +4,10 @@
 
 {% embed url="http://example.com/" %}
 
+{% embed url="https://github.com/" %}
+
+{% embed url="https://northstar.thunderstore.io/package/northstar/Northstar/" %}
+
 ## Special cases
 
 The following embeds are rendered in a special way, e.g. as an iframe

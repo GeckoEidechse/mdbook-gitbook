@@ -5,3 +5,4 @@
 # Syntax
 
 - [Hints](./examples/hints.md)
+- [Embeds](./examples/embeds.md)

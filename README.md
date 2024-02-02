@@ -1,6 +1,7 @@
 # mdbook-gitbook
 
 [![crates.io](https://img.shields.io/crates/v/mdbook-gitbook.svg)](https://crates.io/crates/mdbook-gitbook)
+[![MPL 2.0 LICENSE](https://img.shields.io/github/license/rust-lang/mdBook.svg)](LICENSE)
 [![docs.rs](https://docs.rs/mdbook-gitbook/badge.svg)](https://docs.rs/mdbook-gitbook)
 [![Build](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/build.yml/badge.svg)](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/build.yml)
 [![Test](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/test.yml/badge.svg)](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/test.yml)

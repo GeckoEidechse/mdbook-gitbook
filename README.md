@@ -1,5 +1,10 @@
 # mdbook-gitbook
 
+[![crates.io](https://img.shields.io/crates/v/mdbook-gitbook.svg)](https://crates.io/crates/mdbook-gitbook)
+[![docs.rs](https://docs.rs/mdbook-gitbook/badge.svg)](https://docs.rs/mdbook-gitbook)
+[![Build](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/build.yml/badge.svg)](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/build.yml)
+[![Test](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/test.yml/badge.svg)](https://github.com/GeckoEidechse/mdbook-gitbook/actions/workflows/test.yml)
+
 [mdBook](https://github.com/rust-lang/mdBook) preprocessor to properly render [GitBook](https://www.gitbook.com/) specific syntax in mdBook.
 
 > ⚠️ WIP ⚠️

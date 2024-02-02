@@ -6,7 +6,7 @@ edition = "2021"
 
 description = "mdBook preprocessor to properly render GitBook specific syntax"
 repository = "https://github.com/GeckoEidechse/mdbook-gitbook"
-license = "MIT"
+license = "MPL-2.0"
 readme = "README.md"
 keywords = [ "mdbook", "preprocessor", "markdown", "gitbook" ]
 

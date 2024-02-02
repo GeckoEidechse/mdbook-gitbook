@@ -1,7 +1,7 @@
 # Summary
 
-[Introduction](./README.md)
-[Random](./random.md)
+- [Introduction](./README.md)
+- [Random](./random.md)
 
 # Syntax
 

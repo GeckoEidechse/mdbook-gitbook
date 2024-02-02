@@ -30,8 +30,8 @@ pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
 
         content_refs
             .replace("{ref_url}", &ref_url)
-            .replace("{text}", &text)
-            .replace("{text_url}", &text_url)
+            .replace("{text}", text)
+            .replace("{text_url}", text_url)
     });
     Ok(content.into())
 }

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.3.0...v0.3.1) (2024-02-02)
+
+
+### Bug Fixes
+
+* **docs:** Format entries in summary as list ([5898ffd](https://github.com/GeckoEidechse/mdbook-gitbook/commit/5898ffd3859b0b0db20a1a25d984f948c7293e58))
+
 ## [0.3.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.2.3...v0.3.0) (2024-02-01)
 
 

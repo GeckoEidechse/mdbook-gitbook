@@ -4,6 +4,7 @@ use mdbook::errors::Error;
 use mdbook::preprocess::{Preprocessor, PreprocessorContext};
 use rust_embed::RustEmbed;
 
+mod content_refs;
 mod embeds;
 mod hints;
 
@@ -57,6 +58,7 @@ fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
     chapter.content = inject_stylesheet(&chapter.content)?;
     chapter.content = hints::render_hints(&chapter.content)?;
     chapter.content = embeds::render(&chapter.content)?;
+    chapter.content = content_refs::render(&chapter.content)?;
     Ok(())
 }
 

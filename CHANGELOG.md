@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v1.0.1...v1.0.2) (2024-02-03)
+
+
+### Bug Fixes
+
+* Remove needless borrow ([f41dadc](https://github.com/GeckoEidechse/mdbook-gitbook/commit/f41dadc9b11e8df9e3d05329d22a271b164e5508))
+
 ## [1.0.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v1.0.0...v1.0.1) (2024-02-03)
 
 

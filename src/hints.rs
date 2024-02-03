@@ -11,7 +11,7 @@ pub fn render_hints(content: &str) -> Result<String, mdbook::errors::Error> {
         )
         .expect("failed to parse regex")
     });
-    let hints = Asset::get("hints-template.html").expect("hints-template.html not found in assets");
+    let hints = Asset::get("hints-template.html").expect("template not found");
     let hints = std::str::from_utf8(hints.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let kind = caps

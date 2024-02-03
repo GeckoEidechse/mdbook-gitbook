@@ -11,8 +11,8 @@ pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
         )
         .expect("failed to parse regex")
     });
-    let content_refs = Asset::get("content-refs-template.html")
-        .expect("content-refs-template.html not found in assets");
+    let content_refs =
+        Asset::get("content-refs-template.html").expect("template not found in assets");
     let content_refs = std::str::from_utf8(content_refs.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let ref_url = caps

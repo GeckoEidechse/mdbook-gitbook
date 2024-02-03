@@ -26,8 +26,8 @@ fn render_generic_embeds(content: &str) -> Result<String, mdbook::errors::Error>
         Regex::new(r#"\{%\s*embed\s*url="(?P<url>https?://(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(?:/[a-zA-Z0-9-._%&?=/]*)*)"\s*%\}"#)
             .expect("failed to parse regex")
     });
-    let embeds_template = Asset::get("embeds/generic-template.html")
-        .expect("youtube-template.html not found in assets");
+    let embeds_template =
+        Asset::get("embeds/generic-template.html").expect("template not found in assets");
     let hints = std::str::from_utf8(embeds_template.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let url = caps.name("url").expect("url not found").as_str();
@@ -50,8 +50,8 @@ fn render_youtube_embeds(content: &str) -> Result<String, mdbook::errors::Error>
         Regex::new(r#"\{%\s*embed\s*url="https://www\.youtube\.com/watch\?v=(?P<ytid>[a-zA-Z0-9_-]+)"\s*%\}"#)
             .expect("failed to parse regex")
     });
-    let embeds_template = Asset::get("embeds/youtube-template.html")
-        .expect("youtube-template.html not found in assets");
+    let embeds_template =
+        Asset::get("embeds/youtube-template.html").expect("template not found in assets");
     let hints = std::str::from_utf8(embeds_template.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let yt_id = caps

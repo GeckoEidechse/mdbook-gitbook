@@ -22,9 +22,7 @@ pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
         let body = caps
             .name("body")
             .expect("body not found in regex")
-            .as_str()
-            .replace("\n>\n", "\n\n")
-            .replace("\n> ", "\n");
+            .as_str();
         hints.replace("{kind}", &kind).replace("{body}", &body)
     });
     Ok(content.into())

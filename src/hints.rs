@@ -23,7 +23,7 @@ pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
             .name("body")
             .expect("body not found in regex")
             .as_str();
-        hints.replace("{kind}", &kind).replace("{body}", &body)
+        hints.replace("{kind}", &kind).replace("{body}", body)
     });
     Ok(content.into())
 }

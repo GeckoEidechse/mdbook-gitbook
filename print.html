@@ -174,65 +174,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <style>
-.mdbook-gitbook-hints {
-  padding: 8px 16px;
-  margin-bottom: 16px;
-  border-left: 0.25em solid var(--mdbook-gitbook-hints-color);
-}
-
-.mdbook-gitbook-hints>*:first-child {
-  margin-top: 0;
-}
-
-.mdbook-gitbook-hints>*:last-child {
-  margin-bottom: 0;
-}
-
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
-.mdbook-gitbook-hints-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: 0.2em;
-  background-color: currentColor;
-  -webkit-mask: no-repeat center / 100%;
-  mask: no-repeat center / 100%;
-  -webkit-mask-image: var(--mdbook-gitbook-hints-icon);
-  mask-image: var(--mdbook-gitbook-hints-icon);
-}
-
-/* Icons from https://icon-sets.iconify.design/material-symbols */
-.mdbook-gitbook-hints-info {
-  --mdbook-gitbook-hints-color: rgb(9, 105, 218);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11q-.425 0-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-warning {
-  --mdbook-gitbook-hints-color: rgb(154, 103, 0);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363q-.125-.225-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3q.25 0 .488.125t.387.375l9.25 16q.15.25.138.513t-.138.487q-.125.225-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17q0-.425-.288-.712T12 16q-.425 0-.712.288T11 17q0 .425.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10q-.425 0-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-danger {
-  --mdbook-gitbook-hints-color: rgb(207, 34, 46);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16q0-.425-.288-.712T12 15q-.425 0-.712.288T11 16q0 .425.288.713T12 17m0-4q.425 0 .713-.288T13 12V8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8v4q0 .425.288.713T12 13m-3.35 7H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12q0-.375.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5q.375 0 .738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737q0 .375-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5q-.375 0-.737-.15t-.663-.425zm.85-2l2.5 2.5l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18zm2.5-6"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-success {
-  --mdbook-gitbook-hints-color: rgb(26, 127, 55);
-  --mdbook-gitbook-hints-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M28 12.1a1 1 0 0 0-1.41 0l-11.1 11.05l-6-6A1 1 0 0 0 8 18.53L15.49 26L28 13.52a1 1 0 0 0 0-1.42' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
-}
-
-</style>
-<h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
 <p>A rust crate to render GitBook specific Markdown syntax in mdBook.</p>
 <p>For the supported syntax, see <a href="https://github.com/GeckoEidechse/mdbook-gitbook/issues/1">this GitHub issue</a></p>
 <p>View this book on:</p>
@@ -274,67 +216,10 @@
     </div>
   </a>
 </div>
-<div style="break-before: page; page-break-before: always;"></div><style>
-.mdbook-gitbook-hints {
-  padding: 8px 16px;
-  margin-bottom: 16px;
-  border-left: 0.25em solid var(--mdbook-gitbook-hints-color);
-}
-
-.mdbook-gitbook-hints>*:first-child {
-  margin-top: 0;
-}
-
-.mdbook-gitbook-hints>*:last-child {
-  margin-bottom: 0;
-}
-
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
-.mdbook-gitbook-hints-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: 0.2em;
-  background-color: currentColor;
-  -webkit-mask: no-repeat center / 100%;
-  mask: no-repeat center / 100%;
-  -webkit-mask-image: var(--mdbook-gitbook-hints-icon);
-  mask-image: var(--mdbook-gitbook-hints-icon);
-}
-
-/* Icons from https://icon-sets.iconify.design/material-symbols */
-.mdbook-gitbook-hints-info {
-  --mdbook-gitbook-hints-color: rgb(9, 105, 218);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11q-.425 0-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-warning {
-  --mdbook-gitbook-hints-color: rgb(154, 103, 0);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363q-.125-.225-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3q.25 0 .488.125t.387.375l9.25 16q.15.25.138.513t-.138.487q-.125.225-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17q0-.425-.288-.712T12 16q-.425 0-.712.288T11 17q0 .425.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10q-.425 0-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-danger {
-  --mdbook-gitbook-hints-color: rgb(207, 34, 46);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16q0-.425-.288-.712T12 15q-.425 0-.712.288T11 16q0 .425.288.713T12 17m0-4q.425 0 .713-.288T13 12V8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8v4q0 .425.288.713T12 13m-3.35 7H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12q0-.375.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5q.375 0 .738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737q0 .375-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5q-.375 0-.737-.15t-.663-.425zm.85-2l2.5 2.5l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18zm2.5-6"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-success {
-  --mdbook-gitbook-hints-color: rgb(26, 127, 55);
-  --mdbook-gitbook-hints-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M28 12.1a1 1 0 0 0-1.41 0l-11.1 11.05l-6-6A1 1 0 0 0 8 18.53L15.49 26L28 13.52a1 1 0 0 0 0-1.42' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
-}
-
-</style>
-<h1 id="random"><a class="header" href="#random">Random</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="random"><a class="header" href="#random">Random</a></h1>
 <p>A random page with no real meaning.</p>
-<div style="break-before: page; page-break-before: always;"></div><style>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hints"><a class="header" href="#hints">Hints</a></h1>
+<style>
 .mdbook-gitbook-hints {
   padding: 8px 16px;
   margin-bottom: 16px;
@@ -349,17 +234,9 @@
   margin-bottom: 0;
 }
 
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
 .mdbook-gitbook-hints-icon {
   display: inline-block;
+  color: var(--mdbook-gitbook-hints-color);
   width: 1em;
   height: 1em;
   margin-right: 0.2em;
@@ -392,36 +269,11 @@
 }
 
 </style>
-<h1 id="hints"><a class="header" href="#hints">Hints</a></h1>
 <div class="mdbook-gitbook-hints mdbook-gitbook-hints-info">
-  <p class="mdbook-gitbook-hints-title">
-    <span class="mdbook-gitbook-hints-icon"></span>
-    info
-  </p>
-<p>The default hint. A simple info box.</p>
+  <span class="mdbook-gitbook-hints-icon"></span>
+  The default hint. A simple info box.
 </div>
-<div class="mdbook-gitbook-hints mdbook-gitbook-hints-warning">
-  <p class="mdbook-gitbook-hints-title">
-    <span class="mdbook-gitbook-hints-icon"></span>
-    warning
-  </p>
-<p>A warning.</p>
-</div>
-<div class="mdbook-gitbook-hints mdbook-gitbook-hints-danger">
-  <p class="mdbook-gitbook-hints-title">
-    <span class="mdbook-gitbook-hints-icon"></span>
-    danger
-  </p>
-<p>Danger!</p>
-</div>
-<div class="mdbook-gitbook-hints mdbook-gitbook-hints-success">
-  <p class="mdbook-gitbook-hints-title">
-    <span class="mdbook-gitbook-hints-icon"></span>
-    success
-  </p>
-<p>Success :D</p>
-</div>
-<div style="break-before: page; page-break-before: always;"></div><style>
+<style>
 .mdbook-gitbook-hints {
   padding: 8px 16px;
   margin-bottom: 16px;
@@ -436,17 +288,9 @@
   margin-bottom: 0;
 }
 
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
 .mdbook-gitbook-hints-icon {
   display: inline-block;
+  color: var(--mdbook-gitbook-hints-color);
   width: 1em;
   height: 1em;
   margin-right: 0.2em;
@@ -479,7 +323,119 @@
 }
 
 </style>
-<h1 id="embeds"><a class="header" href="#embeds">Embeds</a></h1>
+<div class="mdbook-gitbook-hints mdbook-gitbook-hints-warning">
+  <span class="mdbook-gitbook-hints-icon"></span>
+  A warning.
+</div>
+<style>
+.mdbook-gitbook-hints {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-left: 0.25em solid var(--mdbook-gitbook-hints-color);
+}
+
+.mdbook-gitbook-hints>*:first-child {
+  margin-top: 0;
+}
+
+.mdbook-gitbook-hints>*:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-gitbook-hints-icon {
+  display: inline-block;
+  color: var(--mdbook-gitbook-hints-color);
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-gitbook-hints-icon);
+  mask-image: var(--mdbook-gitbook-hints-icon);
+}
+
+/* Icons from https://icon-sets.iconify.design/material-symbols */
+.mdbook-gitbook-hints-info {
+  --mdbook-gitbook-hints-color: rgb(9, 105, 218);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11q-.425 0-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-warning {
+  --mdbook-gitbook-hints-color: rgb(154, 103, 0);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363q-.125-.225-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3q.25 0 .488.125t.387.375l9.25 16q.15.25.138.513t-.138.487q-.125.225-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17q0-.425-.288-.712T12 16q-.425 0-.712.288T11 17q0 .425.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10q-.425 0-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-danger {
+  --mdbook-gitbook-hints-color: rgb(207, 34, 46);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16q0-.425-.288-.712T12 15q-.425 0-.712.288T11 16q0 .425.288.713T12 17m0-4q.425 0 .713-.288T13 12V8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8v4q0 .425.288.713T12 13m-3.35 7H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12q0-.375.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5q.375 0 .738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737q0 .375-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5q-.375 0-.737-.15t-.663-.425zm.85-2l2.5 2.5l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18zm2.5-6"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-success {
+  --mdbook-gitbook-hints-color: rgb(26, 127, 55);
+  --mdbook-gitbook-hints-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M28 12.1a1 1 0 0 0-1.41 0l-11.1 11.05l-6-6A1 1 0 0 0 8 18.53L15.49 26L28 13.52a1 1 0 0 0 0-1.42' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+}
+
+</style>
+<div class="mdbook-gitbook-hints mdbook-gitbook-hints-danger">
+  <span class="mdbook-gitbook-hints-icon"></span>
+  Danger!
+</div>
+<style>
+.mdbook-gitbook-hints {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  border-left: 0.25em solid var(--mdbook-gitbook-hints-color);
+}
+
+.mdbook-gitbook-hints>*:first-child {
+  margin-top: 0;
+}
+
+.mdbook-gitbook-hints>*:last-child {
+  margin-bottom: 0;
+}
+
+.mdbook-gitbook-hints-icon {
+  display: inline-block;
+  color: var(--mdbook-gitbook-hints-color);
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / 100%;
+  mask: no-repeat center / 100%;
+  -webkit-mask-image: var(--mdbook-gitbook-hints-icon);
+  mask-image: var(--mdbook-gitbook-hints-icon);
+}
+
+/* Icons from https://icon-sets.iconify.design/material-symbols */
+.mdbook-gitbook-hints-info {
+  --mdbook-gitbook-hints-color: rgb(9, 105, 218);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11q-.425 0-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-warning {
+  --mdbook-gitbook-hints-color: rgb(154, 103, 0);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363q-.125-.225-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3q.25 0 .488.125t.387.375l9.25 16q.15.25.138.513t-.138.487q-.125.225-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17q0-.425-.288-.712T12 16q-.425 0-.712.288T11 17q0 .425.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10q-.425 0-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-danger {
+  --mdbook-gitbook-hints-color: rgb(207, 34, 46);
+  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16q0-.425-.288-.712T12 15q-.425 0-.712.288T11 16q0 .425.288.713T12 17m0-4q.425 0 .713-.288T13 12V8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8v4q0 .425.288.713T12 13m-3.35 7H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12q0-.375.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5q.375 0 .738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737q0 .375-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5q-.375 0-.737-.15t-.663-.425zm.85-2l2.5 2.5l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18zm2.5-6"%2F%3E%3C%2Fsvg%3E');
+}
+
+.mdbook-gitbook-hints-success {
+  --mdbook-gitbook-hints-color: rgb(26, 127, 55);
+  --mdbook-gitbook-hints-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M28 12.1a1 1 0 0 0-1.41 0l-11.1 11.05l-6-6A1 1 0 0 0 8 18.53L15.49 26L28 13.52a1 1 0 0 0 0-1.42' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
+}
+
+</style>
+<div class="mdbook-gitbook-hints mdbook-gitbook-hints-success">
+  <span class="mdbook-gitbook-hints-icon"></span>
+  Success :D
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="embeds"><a class="header" href="#embeds">Embeds</a></h1>
 <h2 id="generic"><a class="header" href="#generic">Generic</a></h2>
 <div style="border: 1px solid #ccc; padding: 10px; max-width: 500px; margin: 10px">
   <a href="http://example.com/">
@@ -544,65 +500,7 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
 </iframe>
-<div style="break-before: page; page-break-before: always;"></div><style>
-.mdbook-gitbook-hints {
-  padding: 8px 16px;
-  margin-bottom: 16px;
-  border-left: 0.25em solid var(--mdbook-gitbook-hints-color);
-}
-
-.mdbook-gitbook-hints>*:first-child {
-  margin-top: 0;
-}
-
-.mdbook-gitbook-hints>*:last-child {
-  margin-bottom: 0;
-}
-
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
-.mdbook-gitbook-hints-icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  margin-right: 0.2em;
-  background-color: currentColor;
-  -webkit-mask: no-repeat center / 100%;
-  mask: no-repeat center / 100%;
-  -webkit-mask-image: var(--mdbook-gitbook-hints-icon);
-  mask-image: var(--mdbook-gitbook-hints-icon);
-}
-
-/* Icons from https://icon-sets.iconify.design/material-symbols */
-.mdbook-gitbook-hints-info {
-  --mdbook-gitbook-hints-color: rgb(9, 105, 218);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16v-4q0-.425-.288-.712T12 11q-.425 0-.712.288T11 12v4q0 .425.288.713T12 17m0-8q.425 0 .713-.288T13 8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8q0 .425.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-warning {
-  --mdbook-gitbook-hints-color: rgb(154, 103, 0);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M2.725 21q-.275 0-.5-.137t-.35-.363q-.125-.225-.137-.488t.137-.512l9.25-16q.15-.25.388-.375T12 3q.25 0 .488.125t.387.375l9.25 16q.15.25.138.513t-.138.487q-.125.225-.35.363t-.5.137zm1.725-2h15.1L12 6zM12 18q.425 0 .713-.288T13 17q0-.425-.288-.712T12 16q-.425 0-.712.288T11 17q0 .425.288.713T12 18m0-3q.425 0 .713-.288T13 14v-3q0-.425-.288-.712T12 10q-.425 0-.712.288T11 11v3q0 .425.288.713T12 15m0-2.5"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-danger {
-  --mdbook-gitbook-hints-color: rgb(207, 34, 46);
-  --mdbook-gitbook-hints-icon: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="currentColor" d="M12 17q.425 0 .713-.288T13 16q0-.425-.288-.712T12 15q-.425 0-.712.288T11 16q0 .425.288.713T12 17m0-4q.425 0 .713-.288T13 12V8q0-.425-.288-.712T12 7q-.425 0-.712.288T11 8v4q0 .425.288.713T12 13m-3.35 7H6q-.825 0-1.412-.587T4 18v-2.65L2.075 13.4q-.275-.3-.425-.662T1.5 12q0-.375.15-.737t.425-.663L4 8.65V6q0-.825.588-1.412T6 4h2.65l1.95-1.925q.3-.275.663-.425T12 1.5q.375 0 .738.15t.662.425L15.35 4H18q.825 0 1.413.588T20 6v2.65l1.925 1.95q.275.3.425.663t.15.737q0 .375-.15.738t-.425.662L20 15.35V18q0 .825-.587 1.413T18 20h-2.65l-1.95 1.925q-.3.275-.662.425T12 22.5q-.375 0-.737-.15t-.663-.425zm.85-2l2.5 2.5l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18zm2.5-6"%2F%3E%3C%2Fsvg%3E');
-}
-
-.mdbook-gitbook-hints-success {
-  --mdbook-gitbook-hints-color: rgb(26, 127, 55);
-  --mdbook-gitbook-hints-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Cpath fill='%23000' d='M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2m0 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14' class='clr-i-outline clr-i-outline-path-1'/%3E%3Cpath fill='%23000' d='M28 12.1a1 1 0 0 0-1.41 0l-11.1 11.05l-6-6A1 1 0 0 0 8 18.53L15.49 26L28 13.52a1 1 0 0 0 0-1.42' class='clr-i-outline clr-i-outline-path-2'/%3E%3Cpath fill='none' d='M0 0h36v36H0z'/%3E%3C/svg%3E");
-}
-
-</style>
-<h1 id="content-refs"><a class="header" href="#content-refs">Content Refs</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="content-refs"><a class="header" href="#content-refs">Content Refs</a></h1>
 <!-- The line below has to be in a single line so that the markdown link `[]()` doesn't break -->
 <p><a href="examples/embeds.html"><div style="border: 1px solid #ccc; padding: 10px; max-width: 500px; margin: 10px"><img alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9J25vbmUnIHZpZXdCb3g9JzAgMCAxNiAxNicgcHJlc2VydmVBc3BlY3RSYXRpbz0neE1pZFlNaWQgbWVldCcgZGF0YS1ybndpYmFzZWNhcmQtLTFnaGhzeTktaG92ZXI9J3RydWUnIGRhdGEtcm53aS1oYW5kbGU9J25lYXJlc3QnIGNsYXNzPSdyLTFwYTYzOTQnIHN0eWxlPSd2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyB3aWR0aDogMzJweDsgaGVpZ2h0OiAzMnB4Oyc+PGcgY2xpcC1wYXRoPSd1cmwoI1BhZ2VMaW5rX3N2Z19fYSknPjxwYXRoIHN0cm9rZT0nY3VycmVudENvbG9yJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMS4yJyBkPSdNMTEuNTk0IDFIMTVtMCAwdjMuNDA2TTE1IDFsLTMuNDA2IDMuNDA2Jz48L3BhdGg+PHBhdGggZmlsbD0nY3VycmVudENvbG9yJyBkPSdNMTUuNiA4LjZhLjYuNiAwIDAgMC0xLjIgMHYxLjNhLjYuNiAwIDEgMCAxLjIgMFY4LjZaJz48L3BhdGg+PHBhdGggZmlsbD0nY3VycmVudENvbG9yJyBmaWxsLXJ1bGU9J2V2ZW5vZGQnIGQ9J00xMS42IDcuNTEzVjcuNWMwLS4wMTUgMC0uMDMtLjAwMi0uMDQ0YTIuMSAyLjEgMCAwIDAtLjU5Mi0xLjM4Mkw4LjUzOSAzLjUzNkEyLjEgMi4xIDAgMCAwIDcuMDMzIDIuOUg1LjJ2LS44YzAtLjIyLjE4LS40LjQtLjRoLjk4M2EuNi42IDAgMCAwIDAtMS4ySDUuNkExLjYgMS42IDAgMCAwIDQgMi4xdi44SDIuNUEyLjEgMi4xIDAgMCAwIC40IDV2OC41YzAgMS4xNi45NCAyLjEgMi4xIDIuMWg3YTIuMSAyLjEgMCAwIDAgMS45MDItMS4yMDguNi42IDAgMCAwIC4wOTguMDA4aDIuNmExLjYgMS42IDAgMCAwIDEuNi0xLjZWMTJhLjYuNiAwIDEgMC0xLjIgMHYuOGEuNC40IDAgMCAxLS40LjRoLTIuNVY3LjUxM1pNMS42IDVhLjkuOSAwIDAgMSAuOS0uOWgzLjl2MS43MzNBMi4yNjcgMi4yNjcgMCAwIDAgOC42NjcgOC4xSDEwLjR2NS40YS45LjkgMCAwIDEtLjkuOWgtN2EuOS45IDAgMCAxLS45LS45VjVabTYtLjY5OWEuODk5Ljg5OSAwIDAgMSAuMDc4LjA3MkwxMC4xMzUgNi45SDguNjY3Yy0uNTkgMC0xLjA2Ny0uNDc4LTEuMDY3LTEuMDY3VjQuMzAxWicgY2xpcC1ydWxlPSdldmVub2RkJz48L3BhdGg+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0nUGFnZUxpbmtfc3ZnX19hJz48cGF0aCBmaWxsPScjZmZmJyBkPSdNMCAwaDE2djE2SDB6Jz48L3BhdGg+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+" width="100%" height="auto" decoding="async" style="width: 32px; height: 32px; border-radius: 4px; margin-right: 10px;">embeds.md</div></a></p>
 <!-- The line below has to be in a single line so that the markdown link `[]()` doesn't break -->

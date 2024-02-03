@@ -6,7 +6,7 @@ View this book on:
 
 GitBook
 
-{% embed url="https://mdbook.gitbook.io/" %}
+{% embed url="https://mdbook.gitbook.io/mdbook-gitbook/" %}
 
 mdBook (via GitHub pages)
 

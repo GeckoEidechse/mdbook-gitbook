@@ -59,6 +59,8 @@ fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
     chapter.content = hints::render(&chapter.content)?;
     chapter.content = embeds::render(&chapter.content)?;
     chapter.content = content_refs::render(&chapter.content)?;
+    // Add your additional syntax parsing here
+
     Ok(())
 }
 

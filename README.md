@@ -13,7 +13,7 @@ You can compare this preprocessor to GitBook by looking at the same sample book 
 - [GitBook](https://mdbook.gitbook.io/mdbook-gitbook/)
 - [mdBook](https://geckoeidechse.github.io/mdbook-gitbook/) (via GitHub pages)
 
-> ⚠️ WIP ⚠️
+> [!WARNING]
 >
 > This pre-processor is still heavily work-in-progress.
 > Contributions of all kinds, especially to extend the supported GitBook syntax, are heavily encouraged and welcome <3

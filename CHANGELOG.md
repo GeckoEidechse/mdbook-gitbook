@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v1.0.0...v1.0.1) (2024-02-03)
+
+
+### Bug Fixes
+
+* Don't show hint type text ([a497eb2](https://github.com/GeckoEidechse/mdbook-gitbook/commit/a497eb209579339348990b405910be1056aee200))
+* Remove unnecessary newlines ([6b82f52](https://github.com/GeckoEidechse/mdbook-gitbook/commit/6b82f52d1a5e3e5efc51bf066b10475cf12f78de))
+* Remove unnecessary string replace ([e6b5f6c](https://github.com/GeckoEidechse/mdbook-gitbook/commit/e6b5f6c63616035f9c64e99a7a4277d03dad742e))
+* Remove unused styling logic ([d307b75](https://github.com/GeckoEidechse/mdbook-gitbook/commit/d307b755372e6a70db167b4705e777a23ebd1529))
+
 ## [1.0.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.4.1...v1.0.0) (2024-02-03)
 
 

@@ -87,7 +87,6 @@ To add support for some currently unsupported syntax, expand the existing existi
 ```rust
 /// Apply to all chapters
 fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
-    chapter.content = inject_stylesheet(&chapter.content)?;
     chapter.content = hints::render(&chapter.content)?;
     chapter.content = embeds::render(&chapter.content)?;
     chapter.content = content_refs::render(&chapter.content)?;

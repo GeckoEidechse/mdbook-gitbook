@@ -55,18 +55,10 @@ impl Preprocessor for GitBook {
 
 /// Apply to all chapters
 fn handle_chapter(chapter: &mut Chapter) -> Result<(), Error> {
-    chapter.content = inject_stylesheet(&chapter.content)?;
     chapter.content = hints::render(&chapter.content)?;
     chapter.content = embeds::render(&chapter.content)?;
     chapter.content = content_refs::render(&chapter.content)?;
     // Add your additional syntax parsing here
 
     Ok(())
-}
-
-/// Adds our stylesheet to the chapter
-fn inject_stylesheet(content: &str) -> Result<String, Error> {
-    let style = Asset::get("style.css").expect("style.css not found in assets");
-    let style = std::str::from_utf8(style.data.as_ref())?;
-    Ok(format!("<style>\n{style}\n</style>\n{content}"))
 }

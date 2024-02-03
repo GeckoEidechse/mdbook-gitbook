@@ -8,6 +8,11 @@
 
 [mdBook](https://github.com/rust-lang/mdBook) preprocessor to properly render [GitBook](https://www.gitbook.com/) specific syntax in mdBook.
 
+You can compare this preprocessor to GitBook by looking at the same sample book on:
+
+- [GitBook](https://mdbook.gitbook.io/mdbook-gitbook/)
+- [mdBook](https://geckoeidechse.github.io/mdbook-gitbook/) (via GitHub pages)
+
 > ⚠️ WIP ⚠️
 >
 > This pre-processor is still heavily work-in-progress.

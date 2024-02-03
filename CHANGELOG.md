@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.4.1...v1.0.0) (2024-02-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add note about the state of this crate
+
+### Documentation
+
+* Add note about the state of this crate ([595e201](https://github.com/GeckoEidechse/mdbook-gitbook/commit/595e201343f15c0bed7e46419d644478f4df2bba))
+
 ## [0.4.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.4.0...v0.4.1) (2024-02-03)
 
 

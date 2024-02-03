@@ -4,7 +4,7 @@ use regex::Regex;
 
 /// Uses regex to find [GitBook hints](https://docs.gitbook.com/content-editor/blocks/hint)
 /// and replaces them with appropriate HTML rendering
-pub fn render_hints(content: &str) -> Result<String, mdbook::errors::Error> {
+pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
     static RE: Lazy<Regex> = Lazy::new(|| {
         Regex::new(
             r#"\{% hint style="(?P<kind>[^"]+)" %\}\s*\n(?P<body>(?:.*\n)*?)\s*\{% endhint %\}"#,

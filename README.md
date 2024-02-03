@@ -15,10 +15,12 @@ You can compare this preprocessor to GitBook by looking at the same sample book 
 
 To see the list of existing and supported syntax, see [this GitHub issue](https://github.com/GeckoEidechse/mdbook-gitbook/issues/1).
 
-> [!WARNING]
+> **Note:**
 >
-> This pre-processor is still heavily work-in-progress.
-> Contributions of all kinds, especially to extend the supported GitBook syntax, are heavily encouraged and welcome <3
+> This mdBook preprocessor was written for local rendering of the [NorthstarWiki](https://github.com/R2Northstar/NorthstarWiki/) where it covers the majority of the used GitBook-specific syntax.
+> As such I'm not planning to add support for more GitBook widgets etc, however contributions to expand the supported syntax are more than welcome <3
+>
+> Similarly, if you'd like to take over maintainership or ownership of this crate, please get in touch via an issue in the GitHub repo of this crate.
 
 ## Usage
 

@@ -19,10 +19,8 @@ pub fn render(content: &str) -> Result<String, mdbook::errors::Error> {
             .expect("kind not found in regex")
             .as_str()
             .to_lowercase();
-        let body = caps
-            .name("body")
-            .expect("body not found in regex")
-            .as_str();
+        let body = caps.name("body").expect("body not found in regex").as_str();
+
         hints.replace("{kind}", &kind).replace("{body}", body)
     });
     Ok(content.into())

@@ -27,7 +27,7 @@ fn render_generic_embeds(content: &str) -> Result<String, mdbook::errors::Error>
             .expect("failed to parse regex")
     });
     let embeds_template =
-        Asset::get("embeds/generic-template.html").expect("template not found in assets");
+        Asset::get("templates/embeds/generic.html").expect("template not found in assets");
     let hints = std::str::from_utf8(embeds_template.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let url = caps.name("url").expect("url not found").as_str();
@@ -51,7 +51,7 @@ fn render_youtube_embeds(content: &str) -> Result<String, mdbook::errors::Error>
             .expect("failed to parse regex")
     });
     let embeds_template =
-        Asset::get("embeds/youtube-template.html").expect("template not found in assets");
+        Asset::get("templates/embeds/youtube.html").expect("template not found in assets");
     let hints = std::str::from_utf8(embeds_template.data.as_ref())?;
     let content = RE.replace_all(content, |caps: &regex::Captures| {
         let yt_id = caps

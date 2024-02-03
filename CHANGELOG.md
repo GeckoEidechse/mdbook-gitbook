@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.4.0...v0.4.1) (2024-02-03)
+
+
+### Bug Fixes
+
+* **ci:** Use different Action to deploy mdbook ([8c90abd](https://github.com/GeckoEidechse/mdbook-gitbook/commit/8c90abd416a380c02bcef485214c570013fdffc9))
+* **docs:** Link to correct page ([c5e46d2](https://github.com/GeckoEidechse/mdbook-gitbook/commit/c5e46d26efe95b4536c75b2209a53880b70f7591))
+
 ## [0.4.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.3.1...v0.4.0) (2024-02-03)
 
 

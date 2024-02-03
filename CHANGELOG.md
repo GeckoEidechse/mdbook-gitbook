@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.3.1...v0.4.0) (2024-02-03)
+
+
+### Features
+
+* Add content ref support ([#14](https://github.com/GeckoEidechse/mdbook-gitbook/issues/14)) ([86f3a9f](https://github.com/GeckoEidechse/mdbook-gitbook/commit/86f3a9f75b6a317c4dd7e58ff958b849e4a90707))
+
 ## [0.3.1](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v0.3.0...v0.3.1) (2024-02-02)
 
 

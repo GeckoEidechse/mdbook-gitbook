@@ -13,17 +13,9 @@
   margin-bottom: 0;
 }
 
-.mdbook-gitbook-hints-title {
-  display: flex;
-  font-weight: 600;
-  align-items: center;
-  line-height: 1;
-  color: var(--mdbook-gitbook-hints-color);
-  text-transform: capitalize;
-}
-
 .mdbook-gitbook-hints-icon {
   display: inline-block;
+  color: var(--mdbook-gitbook-hints-color);
   width: 1em;
   height: 1em;
   margin-right: 0.2em;
@@ -57,9 +49,7 @@
 
 </style>
 <div class="mdbook-gitbook-hints mdbook-gitbook-hints-{kind}">
-  <p class="mdbook-gitbook-hints-title">
-    <span class="mdbook-gitbook-hints-icon"></span>
-  </p>
+  <span class="mdbook-gitbook-hints-icon"></span>
 
   {body}
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v1.0.2...v1.0.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* **docs:** Update shields source link ([10ab5ae](https://github.com/GeckoEidechse/mdbook-gitbook/commit/10ab5aee802421b6cab7039571ceb25e6a8cdd79))
+
 ## [1.0.2](https://github.com/GeckoEidechse/mdbook-gitbook/compare/v1.0.1...v1.0.2) (2024-02-03)
 
 

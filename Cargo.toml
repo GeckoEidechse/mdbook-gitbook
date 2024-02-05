@@ -1,6 +1,6 @@
 [package]
 name = "mdbook-gitbook"
-version = "1.0.2"
+version = "1.0.3"
 authors = ["GeckoEidechse"]
 edition = "2021"
 
